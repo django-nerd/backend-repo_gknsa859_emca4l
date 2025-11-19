@@ -5,3 +5,8 @@ INFO:     Started server process [321]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     172.20.0.1:54750 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+WARNING:  StatReload detected changes in 'schemas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [321]
