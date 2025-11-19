@@ -1,7 +1,19 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [456] using StatReload
-INFO:     Started server process [458]
+INFO:     Started reloader process [553] using StatReload
+INFO:     Started server process [555]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:44196 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:57472 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:57434 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57436 - "GET /api/manuscript/latest HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57434 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57436 - "GET /api/manuscript/latest HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57452 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57456 - "GET /api/manuscript/latest HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57452 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57456 - "GET /api/manuscript/latest HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57498 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57510 - "GET /api/manuscript/latest HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57498 - "GET /api/manuscript/sample HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:57510 - "GET /api/manuscript/latest HTTP/1.1" 200 OK

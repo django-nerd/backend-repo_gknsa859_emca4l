@@ -12,7 +12,7 @@ Model name is converted to lowercase for the collection name:
 """
 
 from pydantic import BaseModel, Field, EmailStr
-from typing import Optional
+from typing import Optional, List
 
 # Example schemas (replace with your own):
 
@@ -50,3 +50,17 @@ class Subscriber(BaseModel):
     name: Optional[str] = Field(None, description="Optional name")
     source: Optional[str] = Field("website", description="Signup source or campaign")
     consent: bool = Field(True, description="User consented to receive emails")
+
+class Manuscript(BaseModel):
+    """
+    Ingested manuscript metadata and extracted artifacts
+    Collection name: "manuscript"
+    """
+    source_url: str = Field(..., description="Direct-download URL for the manuscript")
+    format: Optional[str] = Field(None, description="Document format: pdf|docx|epub|md")
+    title: Optional[str] = Field(None, description="Detected or provided title")
+    subtitle: Optional[str] = Field(None, description="Detected or provided subtitle")
+    cover_url: Optional[str] = Field(None, description="Cover image URL if provided")
+    toc: Optional[List[str]] = Field(default=None, description="Table of contents headings")
+    sample_text: Optional[str] = Field(default=None, description="Extracted sample text snippet")
+    word_count: Optional[int] = Field(default=None, description="Approximate word count of the full text")
